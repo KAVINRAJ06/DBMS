@@ -1,1 +1,0 @@
-web: gunicorn pdf_host.app:app
