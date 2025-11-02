@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Base Management System</title>
+    <title>DBMS Certificate</title>
     <style>
         body {
             margin: 0;
             background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
         }
-        iframe {
-            width: 90vw;
-            height: 90vh;
-            border: none;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
+        a.button {
+            background-color: #3070bf;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s ease;
+            width: 200px;
+            text-align: center;
+        }
+        a.button:hover {
+            background-color: #1f4f8c;
         }
     </style>
 </head>
 <body>
-    <iframe src="{{ url_for('static', filename='Data Base Management System (1).pdf') }}"></iframe>
+    <a href="{{ url_for('static', filename='Data Base Management System (1).pdf') }}" 
+       target="_blank" class="button">
+       View PDF
+    </a>
 </body>
 </html>
